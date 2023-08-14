@@ -11,6 +11,8 @@ const empolyeesControllers = require("../../controllers/employeesController");
 // chain different http method
 router
   .route("/")
+  // single route protection
+  // .get(verifyJWT, empolyeesControllers.getAllEmployees)
   .get(empolyeesControllers.getAllEmployees)
   .post(empolyeesControllers.createNewEmplyees)
   .put(empolyeesControllers.updateNewEmployees)

@@ -6,6 +6,9 @@ const path = require("path");
 // port
 const PORT = process.env.PORT || 3500;
 
+// jwt verify
+const verifyJWT = require("./middleware/verifyJWT");
+
 // require custom function for middleware
 // since logEvents has 2 exports now (logger, logEvents)
 // thus, need to use destructuring syntax
@@ -26,12 +29,17 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 // router - root
 app.use("/", require("./routes/root"));
-// router - employees
-app.use("/employees", require("./routes/api/employees"));
 // register
 app.use("/register", require("./routes/register"));
 // auth
 app.use("/auth", require("./routes/auth"));
+
+// using jwt to protect the routes below
+// note that the script read from top to down
+// thus, all routes above are not protected by verifyJWT
+app.use(verifyJWT);
+// router - employees
+app.use("/employees", require("./routes/api/employees"));
 
 // Cross Origin Resource Sharing
 const cors = require("cors");
