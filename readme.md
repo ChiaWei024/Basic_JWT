@@ -12,11 +12,11 @@ Following previous practice: Basic_Auth - https://github.com/ChiaWei024/Basic_Au
 
    - require('crypto').randomBytes(64).toString('hex')
 
-1. Access Token
+1. Access Token and Refresh Token
 
-1. Refresh Token
-
-   - purpose of refresh token, why send with cookie?
+   - From: https://www.izertis.com/en/-/refresh-token-with-jwt-authentication-in-node-js
+   - Access Token: It contains all the information the server needs to know if the user / device can access the resource you are requesting or not. They are usually expired tokens with a short validity period.
+   - Refresh Token: The refresh token is used to generate a new access token. Typically, if the access token has an expiration date, once it expires, the user would have to authenticate again to obtain an access token. With refresh token, this step can be skipped and with a request to the API get a new access token that allows the user to continue accessing the application resources.
 
 1. XSS/ XSRF
 

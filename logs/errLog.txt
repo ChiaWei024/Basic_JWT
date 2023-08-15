@@ -14,3 +14,5 @@
 
 20230814	20:13:12	cfe2598f-d811-4a8f-a569-069f7496f82e	TypeError	res.sendStauts is not a function
 
+20230815	20:27:16	683d96f6-9e2d-424a-9d48-5a91c7bd627a	TypeError	Cannot read properties of undefined (reading 'jwt')
+
