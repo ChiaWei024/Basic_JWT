@@ -536,3 +536,13 @@
 
 20230815	20:42:28	bdc783dc-f17d-43c3-846b-ab0947e74670	GET	undefined	/employees
 
+20230816	20:18:26	c84c47ff-c667-459e-a443-0233d4b60d7f	POST	undefined	/auth
+
+20230816	20:18:53	8c1f9651-4f0e-4de2-83be-5e1b7e83f659	GET	undefined	/logout
+
+20230816	20:19:32	d101e929-d512-4248-aa58-514e1a491625	POST	undefined	/auth
+
+20230816	20:19:34	1e883538-43f4-4821-a839-0475d9174fca	GET	undefined	/logout
+
+20230816	20:20:12	8a867e2c-b93a-45db-8e2b-9e2ee4df5080	GET	undefined	/employees
+

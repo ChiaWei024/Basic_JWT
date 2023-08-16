@@ -38,6 +38,8 @@ app.use("/register", require("./routes/register"));
 app.use("/auth", require("./routes/auth"));
 // refresh token
 app.use("/refresh", require("./routes/refresh"));
+// logout
+app.use("/logout", require("./routes/logout"));
 
 // using jwt to protect the routes below
 // note that the script read from top to down
