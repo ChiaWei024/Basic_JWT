@@ -31,6 +31,9 @@ Following previous practice: Basic_Auth - https://github.com/ChiaWei024/Basic_Au
 
 1. req.header["authorization"] what is that?
 
+   - HTTP Authorization request header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
+   - The HTTP Authorization request header can be used to provide credentials that authenticate a user agent with a server, allowing access to a protected resource.
+
 1. Single route protecting
 
    - router
